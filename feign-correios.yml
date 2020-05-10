@@ -8,3 +8,12 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:9091/eureka/
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: metrics, health, info
+  endpoint:
+    health:
+      show-details: always 

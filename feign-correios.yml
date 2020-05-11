@@ -14,3 +14,10 @@ management:
     web:
       exposure:
         include: metrics, health, info
+  endpoint:
+    health:
+      show-details: always 
+
+feign:
+  hystrix:
+    enabled: true
